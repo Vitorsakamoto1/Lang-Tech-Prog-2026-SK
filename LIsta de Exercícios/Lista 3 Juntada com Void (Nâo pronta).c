@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 void ex5 (){
 	int valor, final;
@@ -25,8 +26,8 @@ void ex5 (){
 	printf("\nNOTAS DE 2:   %d notas", dois);
 	printf("\nNOTAS DE 1:   %d notas", um);
 }
-void ex6 (){
-	
+
+void ex6 (){	
 	double t = 0.01, g = 9.8, k = 0.5, vx, vy, x = 0, y = 0, rad, v0, graus0, tempo = 0;
 
 	printf("\n==========|Exercicio 6|==========\n");
@@ -54,29 +55,31 @@ void ex6 (){
 		
 	}
 	printf("Alcance horizontal: %.2f metros\n", x);
-    printf("Tempo de voo: %.2f segundos\n", tempo);
-	
+    printf("Tempo de voo: %.2f segundos\n", tempo);	
 }
-void exe7 (){
+
+void ex7 (){
     float salario, inss;
 
-    printf ("Digite o Salario Bruto");
+	printf("\n==========|Exercicio 7|==========\n");
+	 
+    printf ("Digite o Salario Bruto: ");
     scanf("%lf", salario);
 
     if (salario <= 1412.00) {
-        inss = salarioBruto * (100 / 7.5);
+        inss = salario * (100 / 7.5);
     }
-    else if (salario > 1412.00 and salario <= 2666.68){
+    else if (salario > 1412.00, salario <= 2666.68){
         inss = salario * (100 / 9);
     }
-    else if (salario > 2666.68 and salario <= 4000,03){
+    else if (salario > 2666.68, salario <= 4000,03){
         inss = salario * (100 / 12);
     }
     else {
         inss = salario * (100 / 14);
     }
 
-    Printf("\nDesconto do inss: R$ %.2f",inss);
+    printf("\nDesconto do inss: R$ %.2f",inss);
 }
 
 
@@ -89,7 +92,7 @@ int main(int argc, char *argv[]) {
 	printf("|                LISTA DE EXERCICIOS 03             |\n");
 	printf("=====================================================\n");
 	
-    print("Exercicios Disponiveis:\n")
+    printf("Exercicios Disponiveis:\n");
 
 	printf("EXERCICIO 5\n");
 	printf("EXERCICIO 6\n");
@@ -107,20 +110,24 @@ int main(int argc, char *argv[]) {
 			break;
 		}
 		case 6:{
-			ex6 ():
+			ex6 ();
 			break;
 		}
+		
         case 7:{
-			ex7 ():
+			ex7 ();
 			break;
 		}
+		/*
         case 8:{
-			ex8 ():
+			ex8 ();
 			break;
 		}
         case 9:{
-			ex9 ():
+			ex9 ();
 			break;
 		}
+		*/
 	return 0;
+	}
 }
